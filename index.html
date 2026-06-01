@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Квиз для Кристины! 🎉</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Onest:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-confetti" id="bgConfetti"></div>
+
+    <div class="wrap">
+      <header>
+        <div class="title">Квиз для Кристины!</div>
+      </header>
+
+      <div class="scoreboard">
+        <div class="stat">
+          <div class="num" id="scoreNum">0</div>
+          <div class="lab">Очки</div>
+        </div>
+        <div class="stat">
+          <div class="num" id="answeredNum">0/20</div>
+          <div class="lab">Отвечено</div>
+        </div>
+        <div class="stat">
+          <div class="num" id="correctNum">0</div>
+          <div class="lab">Правильно</div>
+        </div>
+      </div>
+
+      <div class="board-scroll">
+        <div class="board" id="board"></div>
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"><div class="modal" id="modal"></div></div>
+
+    <div class="finale" id="finale">
+      <h2>Ура, игра пройдена! 🎊</h2>
+      <div class="big" id="finalScore">0</div>
+      <p id="finalText">очков набрано</p>
+      <img class="finale-img" src="images/happy-birthday.jpg" alt="" />
+      <button onclick="location.reload()">Сыграть ещё раз</button>
+    </div>
+
+    <div class="burst" id="burst"></div>
+
+    <script src="questions.js"></script>
+    <script src="quiz.js"></script>
+  </body>
+</html>
